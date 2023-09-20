@@ -8,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class MenuBarComponent implements OnInit {
 
   constructor() { }
-
+  show: boolean = false;
   ngOnInit(): void {
   }
 
+  showMenu(): void {
+    this.show = true;
+  }
+
+
+  hideMenu(): void {
+    this.show = false;
+  }
 }
