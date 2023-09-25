@@ -1,43 +1,29 @@
 <div class="menu-bar__container">
 	<div class="menu-bar__logo">
-		<img
-			src="assets/ps-logo.png"
-			alt="playstation logo"
-			srcset=""
-			width="140px"
-			height="32px"
-		>
+		
+			<a [routerLink]="'/'">
+
+				<img src="assets/ps-logo.png" alt="playstation logo" srcset="" width="140px" height="32px"/>
+			</a>
+			
 	</div>
-	
-	<div 
-	id="menu"
-	class="menu-bar__item"
-	[ngClass]="show ? 'active': ''">
-	
-		<ul >
+
+	<div id="menu" class="menu-bar__item" [ngClass]="show ? 'active': ''">
+
+		<ul>
 			<li (click)="hideMenu()"><a href="https://www.youtube.com/">YOUTUBE</a></li>
 			<li (click)="hideMenu()"><a href="https://www.linkedin.com/in/gpsc/">LINKEDIN</a></li>
 			<li (click)="hideMenu()"><a href="https://github.com/Gilson401">GITHUB</a></li>
 		</ul>
 	</div>
 
+	
+	
 	<div class="menu-bar__button">
-	<img 
-	(click)="showMenu()"
-	src="assets/menu.svg" alt="">
+		
+		<img (click)="showMenu()" src="assets/menu.svg" alt="menu button" style="margin: 0 10px 0 10px;">
 	</div>
-	<div 
-	(click)="hideMenu()" 
-	class="overlay-menu "
-	[ngClass]="show ? 'active': ''"
-	></div>
+
+	<div (click)="hideMenu()" class="overlay-menu " [ngClass]="show ? 'active': ''"></div>
 
 </div>
-<script>
-const el = document.getElementById('#menu')
-el.addEventListener('click', (e)=>{
-	const outside = !el.contains(e.target)
-	
-	console.log(outside)
-})
-</script>

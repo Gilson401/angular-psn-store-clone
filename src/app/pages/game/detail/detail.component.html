@@ -1,0 +1,56 @@
+<div class="detail__container">
+    <div class="detail__cover">
+    <img src="{{ game.gameCover }}" alt="game cover">
+    </div>
+
+    <div class="detail__content">
+    <div class="detail__info">
+        <div class="detail__price"> 
+            <h2>{{ game.gameLabel }}</h2>
+            <p> {{ game.gameType }}</p>
+
+            <div>
+                <span class="plataform">PS4</span> 
+                <span class="plataform">PS5</span>
+            </div>
+                
+            <p> {{ game.gamePrice }} </p>
+
+            <div style="display: flex; align-items: self-end;">
+
+                <button class="add-cart" type="button">Adicionar no Carrinho</button>
+                
+                <button class="rounded-bg">
+                    <img src="assets/heart.svg" alt="heartsvg" height="20px">
+                </button>
+            </div> 
+        
+        </div>
+        
+        <div class="detail__numplayers"> {{game.numPlayers}} </div>
+        <div class="detail__age "> 
+            <img src="{{ gameAgeLimit()}}" 
+            
+            alt="age">
+        </div>
+    </div>
+
+    <h2> Informações do jogo e jurídicas</h2>
+    <div class="detail__description">  </div>
+    <div class="detail__description">
+    <div class="detail__technical">
+        Plataforma:         PS4, PS5 <br/>
+        Lançamento:         3/12/2021 <br/>
+        Distribuidora:      RATALAIKA GAMES SL<br/>
+        Gênero:         Ação, Aventura, Casual<br/>
+        Idiomas da tela:      Alemão, Espanhol, Francês (França), Inglês, Japonês, Russo
+
+    </div>
+    <div class="detail__genericaldescription">
+        {{ gameDescription }}
+    </div>    
+    </div>
+
+</div>
+
+</div>

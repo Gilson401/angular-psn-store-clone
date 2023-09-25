@@ -8,3 +8,14 @@
 	align-items: baseline;
 	flex-wrap: wrap;
 }
+
+
+.home-fetch-status{
+	padding: 30px;
+	color: white;
+	margin: 30px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.8);
+	color: antiquewhite;
+	font-family: Calibri;
+}
